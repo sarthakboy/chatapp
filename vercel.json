@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "ChatApp/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "ChatApp/wsgi.py"
+      }
+    ]
+}
