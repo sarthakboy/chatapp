@@ -114,7 +114,7 @@
         let chatSocket;
 
         function setupWebSocket() {
-            chatSocket = new WebSocket("ws://" + window.location.host + "/");
+            chatSocket = new WebSocket("wss://" + window.location.host + "/");
 
             chatSocket.onopen = function (e) {
                 console.log("WebSocket connection established.");
